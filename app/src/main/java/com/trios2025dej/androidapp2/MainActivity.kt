@@ -2,28 +2,36 @@ package com.trios2025dej.androidapp2
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.ImageView
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var imgLogo: ImageView
+    private lateinit var btnMenu: Button
+    private lateinit var btnCart: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val btnMenu = findViewById<Button>(R.id.btnMenu)
-        val btnCart = findViewById<Button>(R.id.btnCart)
+        imgLogo = findViewById(R.id.imgLogo)
+        btnMenu = findViewById(R.id.btnMenu)
+        btnCart = findViewById(R.id.btnCart)
 
-        // Navigate to Menu screen
+        // Navigate to MenuActivity
         btnMenu.setOnClickListener {
-            val i = Intent(this, MenuActivity::class.java)
-            startActivity(i)
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
         }
 
-        // Navigate to Cart screen
+        // Navigate to CartActivity
         btnCart.setOnClickListener {
-            val i = Intent(this, CartActivity::class.java)
-            startActivity(i)
+            val intent = Intent(this, CartActivity::class.java)
+            startActivity(intent)
         }
     }
 }
