@@ -7,10 +7,10 @@ import com.trios2025dej.androidapp2.data.model.MenuItem
 object DataSeeder {
 
     val categories = listOf(
-        Category("Coffee", R.drawable.ic_coffee),
-        Category("Donuts", R.drawable.ic_donut),
-        Category("Breakfast", R.drawable.ic_breakfast),
-        Category("Sandwiches", R.drawable.ic_sandwich)
+        Category("Coffee", R.drawable.coffee),
+        Category("Donuts", R.drawable.donut),
+        Category("Breakfast", R.drawable.breakfast),
+        Category("Sandwiches", R.drawable.sandwich)
     )
 
     val menuItems = listOf(
@@ -19,7 +19,7 @@ object DataSeeder {
             name = "Original Blend Coffee",
             price = 1.99,
             description = "Freshly brewed premium Tims coffee.",
-            imageRes = R.drawable.ic_coffee,
+            imageRes = R.drawable.coffee,
             category = "Coffee"
         ),
         MenuItem(
@@ -27,7 +27,7 @@ object DataSeeder {
             name = "Double Double",
             price = 2.19,
             description = "Coffee with two creams and two sugars.",
-            imageRes = R.drawable.ic_coffee,
+            imageRes = R.drawable.coffee,
             category = "Coffee"
         ),
         MenuItem(
@@ -35,7 +35,7 @@ object DataSeeder {
             name = "Chocolate Dip Donut",
             price = 1.49,
             description = "Soft donut dipped in chocolate glaze.",
-            imageRes = R.drawable.ic_donut,
+            imageRes = R.drawable.donut,
             category = "Donuts"
         ),
         MenuItem(
@@ -43,7 +43,7 @@ object DataSeeder {
             name = "Boston Cream",
             price = 1.49,
             description = "Iconic donut with creamy chocolate filling.",
-            imageRes = R.drawable.ic_donut,
+            imageRes = R.drawable.donut,
             category = "Donuts"
         ),
         MenuItem(
@@ -51,7 +51,7 @@ object DataSeeder {
             name = "Bagel BELT",
             price = 5.49,
             description = "Bagel with bacon, egg, lettuce, and tomato.",
-            imageRes = R.drawable.ic_breakfast,
+            imageRes = R.drawable.breakfast,
             category = "Breakfast"
         ),
         MenuItem(
@@ -59,7 +59,7 @@ object DataSeeder {
             name = "Farmer's Wrap",
             price = 6.19,
             description = "Egg, sausage, hash brown, and cheese wrap.",
-            imageRes = R.drawable.ic_breakfast,
+            imageRes = R.drawable.breakfast,
             category = "Breakfast"
         ),
         MenuItem(
@@ -67,7 +67,7 @@ object DataSeeder {
             name = "Ham & Cheese Sandwich",
             price = 5.99,
             description = "Classic ham & cheese on your choice of bread.",
-            imageRes = R.drawable.ic_sandwich,
+            imageRes = R.drawable.sandwich,
             category = "Sandwiches"
         ),
         MenuItem(
@@ -75,7 +75,7 @@ object DataSeeder {
             name = "Turkey Bacon Club",
             price = 6.99,
             description = "Turkey, bacon, lettuce, and tomato on a bun.",
-            imageRes = R.drawable.ic_sandwich,
+            imageRes = R.drawable.sandwich,
             category = "Sandwiches"
         )
     )
